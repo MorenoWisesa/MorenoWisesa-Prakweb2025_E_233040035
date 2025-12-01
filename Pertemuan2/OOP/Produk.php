@@ -9,7 +9,6 @@ class Game Extends Produk {
         $this->waktuMain = $waktuMain;
     }
 
-    // cara untuk mengakses harga dari Child Class
     public function getHarga()
     {
         return $this ->harga;
@@ -17,8 +16,9 @@ class Game Extends Produk {
 
     public function getInfoProduk()
     {
-        $infoParent = parent::getInfoProduk()
-        return "Game : {$infoParent} ~ {$this ->waktuMain} Jam."
+        $infoParent = parent::getInfoProduk();
+        
+        return "Game : {$infoParent} ~ {$this ->waktuMain} Jam.";
     }
 }
 
@@ -31,6 +31,5 @@ echo $produk2->getInfoProduk();
 echo "<br/>";
 
 
-// sudah tidak bisa akses dan mengubah harga karena sudah di protect
 $produk1->harga = 15000;
-echo $produk1->harga;
+echo $produk1->harga
