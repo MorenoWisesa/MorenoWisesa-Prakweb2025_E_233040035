@@ -1,5 +1,5 @@
 <?php
-// ... (Namespace dan import lainnya)
+
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Post;
