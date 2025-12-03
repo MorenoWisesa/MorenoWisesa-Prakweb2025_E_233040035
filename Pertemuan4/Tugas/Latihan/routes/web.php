@@ -48,7 +48,7 @@ Route::get('/posts/{slug}', [PostController::class, 'show'])->middleware('auth')
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->middleware('guest')->name('register');
 Route::post('/register', [RegisterController::class, 'register'])->middleware('guest');
 
-// Route untuk login – middleware guest
+// Route untuk login
 Route::get('/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('guest');
 
