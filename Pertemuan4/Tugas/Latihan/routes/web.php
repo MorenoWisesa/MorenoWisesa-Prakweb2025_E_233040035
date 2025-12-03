@@ -52,5 +52,5 @@ Route::post('/register', [RegisterController::class, 'register'])->middleware('g
 Route::get('/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('guest');
 
-// Route logout – hanya untuk yang sudah login
+// Route logout – untuk yang sudah login
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
